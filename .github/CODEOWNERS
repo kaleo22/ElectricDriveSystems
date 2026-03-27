@@ -1,0 +1,34 @@
+# CODEOWNERS
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+#
+# Each line maps a file pattern to one or more owners who will be
+# automatically requested for review on every Pull Request touching those paths.
+#
+# Replace the placeholder GitHub usernames below with real team members.
+# Format: <pattern>  @<github-username> [@<github-username> ...]
+
+# Default: Team Manager reviews everything
+*                   @kaleo22
+
+# Firmware — Firmware Lead + Team Manager
+firmware/           @kaleo22
+
+# Hardware / PCB — Hardware Lead + Team Manager
+hardware/           @kaleo22
+
+# Simulation — Simulation Engineer + Team Manager
+simulation/         @kaleo22
+
+# Documentation — Documentation Lead
+docs/               @kaleo22
+
+# Tests — Test Engineer
+tests/              @kaleo22
+
+# Scripts — Integration Engineer
+scripts/            @kaleo22
+
+# Repository meta-files — Team Manager
+.github/            @kaleo22
+CONTRIBUTING.md     @kaleo22
+SETUP_GITHUB.md     @kaleo22

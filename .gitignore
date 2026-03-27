@@ -1,0 +1,65 @@
+# ─── Operating System ────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ─── Editor / IDE ─────────────────────────────────────────────────────────────
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.suo
+*.user
+*.sln.docstates
+*.swp
+*~
+
+# ─── Python (scripts / pre-commit tooling) ────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+.venv
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# ─── Firmware build artefacts ─────────────────────────────────────────────────
+firmware/build/
+firmware/**/*.o
+firmware/**/*.elf
+firmware/**/*.bin
+firmware/**/*.hex
+firmware/**/*.map
+firmware/**/*.lst
+
+# ─── Simulation output ────────────────────────────────────────────────────────
+simulation/output/
+simulation/**/*.mat
+simulation/**/*.slxc
+simulation/**/*.mex*
+
+# ─── KiCad / PCB ─────────────────────────────────────────────────────────────
+hardware/**/*-backups/
+hardware/**/__pycache__/
+hardware/**/*.bak
+hardware/**/*-bak.*
+hardware/**/fp-info-cache
+
+# ─── Test logs & measurement data ─────────────────────────────────────────────
+tests/logs/
+tests/**/*.csv
+tests/**/*.dat
+
+# ─── Miscellaneous ────────────────────────────────────────────────────────────
+*.log
+*.tmp
+*.bak
+*.orig

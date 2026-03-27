@@ -1,0 +1,28 @@
+name: "CI — YAML & JSON Validation"
+
+on:
+  pull_request:
+    paths:
+      - "**/*.yml"
+      - "**/*.yaml"
+      - "**/*.json"
+
+jobs:
+  validate-yaml-json:
+    name: Validate YAML and JSON syntax
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check YAML syntax
+        run: |
+          pip install --quiet yamllint
+          yamllint -d relaxed .
+
+      - name: Check JSON syntax
+        run: |
+          find . -name "*.json" -not -path "./.git/*" | while read f; do
+            python3 -c "import json, sys; json.load(open('$f'))" || exit 1
+          done
