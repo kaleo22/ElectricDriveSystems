@@ -1,0 +1,17 @@
+# Markdownlint configuration
+# https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
+
+default: true
+
+# Allow long lines in tables and code blocks — common in engineering docs
+MD013:
+  line_length: 120
+  tables: false
+  code_blocks: false
+
+# Allow duplicate headings in different sections
+MD024:
+  siblings_only: true
+
+# Allow bare URLs (e.g. in link references)
+MD034: false
