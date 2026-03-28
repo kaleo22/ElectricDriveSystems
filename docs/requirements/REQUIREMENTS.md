@@ -1,6 +1,6 @@
 # System Requirements
 
-> **Status:** Placeholder — not started  
+> **Status:** Placeholder — not started
 > **Last updated:** —
 
 ---

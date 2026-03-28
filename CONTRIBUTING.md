@@ -63,7 +63,7 @@ git checkout -b mychanges
 
 Follow the [Conventional Commits](https://www.conventionalcommits.org/) specification:
 
-```
+```markdown
 <type>(<scope>): <short description>
 
 [optional body]
@@ -85,7 +85,7 @@ Follow the [Conventional Commits](https://www.conventionalcommits.org/) specific
 
 **Examples:**
 
-```
+```markdown
 feat(firmware): add PWM duty-cycle control stub
 fix(hardware): correct gate driver footprint reference
 docs(adr): add ADR-0002 for motor driver selection
@@ -119,13 +119,14 @@ chore(ci): add markdown lint workflow
 This repository uses [pre-commit](https://pre-commit.com/) for lightweight automated checks.
 
 ```sh
-pip install pre-commit
-pre-commit install
+./scripts/setup-pre-commit.sh
 ```
 
 Hooks include: trailing whitespace, end-of-file newline, YAML/JSON syntax, and Markdown lint.
 Run manually on all files with:
 
 ```sh
-pre-commit run --all-files
+.venv/bin/pre-commit run --all-files
 ```
+
+Using the project-local virtual environment avoids distro-specific `nodeenv` issues and is only needed for the pre-commits.

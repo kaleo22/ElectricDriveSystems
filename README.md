@@ -14,13 +14,13 @@ The system will eventually support:
 - **Speed down** — incremental speed decrease
 
 At the current stage the implementation has **not been started**.
-This repository is being set up to establish a professional, reproducible engineering workflow before any hardware or firmware work begins.
+This repository is being set up to establish a professional, reproducible engineering workflow.
 
 ---
 
 ## Repository Structure
 
-```
+```text
 ElectricDriveSystems/
 ├── .github/                    # GitHub configuration (templates, workflows, CODEOWNERS)
 │   ├── ISSUE_TEMPLATE/         # Bug, task, and feature issue templates
@@ -62,17 +62,25 @@ ElectricDriveSystems/
 
 ---
 
-## Team
+## Team Roles
 
 | Role | Responsibility |
 |------|---------------|
-| Team Manager | Project coordination, PR review, milestone tracking |
-| Firmware Lead | Microcontroller code, drivers |
-| Hardware Lead | Schematics, PCB, power electronics |
-| Test Engineer | Test plans, measurement logs |
-| Simulation Engineer | Motor model, simulation scripts |
-| Documentation Lead | Reports, presentations, glossary |
-| Integration Engineer | System integration, CI/toolchain |
+| Team Leader | Project coordination, milestone tracking, interface alignment |
+| Hardware Specialist | Support for hardware-related work packages (Driver Electronics, Power Electronics, assembly) |
+| Software Specialist | Support for Control Board software development |
+| Documentation Specialist | Coordination of report structure, consistency, and glossary |
+| Presentation Specialist | Coordination of milestone presentations and final presentation |
+
+## Work Packages
+
+| Work Package | Main Responsibility |
+|-------------|---------------------|
+| Control Board | Microcontroller, buttons, software |
+| Driver Electronics | Driver stage for the power electronics |
+| Power Electronics | Power stage for the motor |
+| DC Motor | Motor selection / specification |
+| Power Supply | Supply concept / source / battery option |
 
 *Individual assignments will be documented in the project management files.*
 
@@ -103,7 +111,8 @@ ElectricDriveSystems/
 | `docs/<short-description>` | Documentation-only changes |
 
 **Examples:**
-```
+
+```text
 feature/motor-speed-control
 fix/pwm-frequency-calculation
 docs/update-architecture-diagram
@@ -136,15 +145,18 @@ docs/update-architecture-diagram
 ## Getting Started
 
 1. Clone the repository:
+
    ```sh
    git clone https://github.com/kaleo22/ElectricDriveSystems.git
    cd ElectricDriveSystems
    ```
+
 2. Install pre-commit hooks (optional but recommended):
+
    ```sh
-   pip install pre-commit
-   pre-commit install
+   ./scripts/setup-pre-commit.sh
    ```
+
 3. Read [`CONTRIBUTING.md`](CONTRIBUTING.md) before making your first change.
 4. Read [`SETUP_GITHUB.md`](SETUP_GITHUB.md) if you are a maintainer configuring repository protections.
 
