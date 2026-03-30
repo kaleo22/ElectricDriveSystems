@@ -129,4 +129,4 @@ Run manually on all files with:
 .venv/bin/pre-commit run --all-files
 ```
 
-Using the project-local virtual environment avoids distro-specific `nodeenv` issues and is only needed for the pre-commits.
+Using the project-local virtual environment avoids distro-specific `nodeenv` issues and is only needed for pre-commit hooks.

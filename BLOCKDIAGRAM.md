@@ -1,4 +1,4 @@
-# Blockdiagram seperated in Power and Signal Flow
+# Block diagram separated in Power and Signal Flow
 
 ```mermaid
 flowchart LR
