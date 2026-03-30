@@ -20,10 +20,10 @@ Use the following structure for each meeting note:
 
 ---
 
-**Date:** YYYY-MM-DD
-**Attendees:** [list names]
-**Facilitator:** [name]
-**Note-taker:** [name]
+- **Date:** YYYY-MM-DD
+- **Attendees:** [list names]
+- **Facilitator:** [name]
+- **Note-taker:** [name]
 
 ### Agenda
 

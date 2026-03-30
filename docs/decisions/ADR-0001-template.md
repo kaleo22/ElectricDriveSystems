@@ -1,8 +1,8 @@
 # ADR-0001 — [Decision Title]
 
-> **Status:** Proposed / Accepted / Deprecated / Superseded
-> **Date:** YYYY-MM-DD
-> **Authors:** [Name(s)]
+> **Status:** Proposed / Accepted / Deprecated / Superseded<br>
+> **Date:** YYYY-MM-DD<br>
+> **Authors:** [Name(s)]<br>
 
 ---
 
