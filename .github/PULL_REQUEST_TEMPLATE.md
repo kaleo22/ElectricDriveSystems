@@ -1,4 +1,4 @@
-## Summary
+# Summary
 
 <!-- Describe the changes in this PR in 2–4 sentences. -->
 

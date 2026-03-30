@@ -1,12 +1,12 @@
 # Firmware
 
-> **Status:** Not started — placeholder only
+**Status:** Not started — placeholder only
 
 This folder will contain the bare-metal firmware for the brushed DC motor controller.
 
 ## Planned Structure
 
-```
+```text
 firmware/
 ├── src/            # C/C++ source files
 ├── include/        # Header files

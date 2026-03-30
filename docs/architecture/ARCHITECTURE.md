@@ -1,7 +1,7 @@
 # System Architecture
 
-> **Status:** Placeholder — not started
-> **Last updated:** —
+**Status:** Placeholder — not started
+**Last updated:** —
 
 ---
 
