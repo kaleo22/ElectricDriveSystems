@@ -6,7 +6,7 @@ This folder will contain system-level test plans, test procedures, and measureme
 
 ## Structure (Planned)
 
-```
+```text
 tests/
 ├── plans/          # Test plans and specifications
 ├── procedures/     # Step-by-step test procedures

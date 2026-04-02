@@ -1,7 +1,7 @@
 # System Architecture
 
-> **Status:** Placeholder — not started  
-> **Last updated:** —
+**Status:** Placeholder — not started
+**Last updated:** —
 
 ---
 
@@ -21,7 +21,7 @@ Topics to be covered:
 
 ## System Block Diagram
 
-```
+```markdown
 [ Placeholder — diagram to be added ]
 ```
 

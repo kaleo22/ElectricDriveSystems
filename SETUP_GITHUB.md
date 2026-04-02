@@ -28,6 +28,7 @@ that cannot be enforced through files alone.
 Repeat the steps above with **Branch name pattern**: `dev`.
 
 Suggested settings for `dev`:
+
 - ✅ Require a pull request before merging
 - Required approvals: **1**
 - ✅ Dismiss stale reviews on new pushes
@@ -91,7 +92,7 @@ gh label create "area: testing" --color "fef2c0" --description "Testing and meas
 The file `.github/CODEOWNERS` defines automatic review requests.
 Update it with the actual GitHub usernames of your team:
 
-```
+```text
 # .github/CODEOWNERS
 * @kaleo22           # Team Manager — reviews all changes by default
 firmware/  @firmware-lead
@@ -111,9 +112,10 @@ For future use when actual dependencies are added:
 
 ## 8. Invite Team Members
 
-**Settings → Collaborators → Add people**
+You now invite people as follows: **Settings → Collaborators → Add people**
 
 Recommended roles:
+
 - Team Manager: **Maintain**
 - All other members: **Write**
 

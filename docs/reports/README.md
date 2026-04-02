@@ -12,11 +12,12 @@ This folder contains all project reports and presentation materials.
 
 ## Naming Convention
 
-```
+```text
 YYYY-MM-DD-<type>-<version>.<ext>
 ```
 
 Examples:
+
 - `2024-11-15-midterm-report-v1.pdf`
 - `2024-12-10-final-presentation-v2.pptx`
 
