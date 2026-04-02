@@ -1,0 +1,12 @@
+services:
+  renode:
+    image: antmicro/renode:latest
+    container_name: renode
+    tty: true
+    stdin_open: true
+    network_mode: host
+    environment:
+      - DISPLAY=${DISPLAY}
+    volumes:
+      - ${XAUTHORITY}:/home/developer/.Xauthority
+      - ./scripts:/scripts 
