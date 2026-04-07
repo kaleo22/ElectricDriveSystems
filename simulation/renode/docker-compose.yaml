@@ -1,12 +1,18 @@
 services:
   renode:
-    image: antmicro/renode:latest
+    image: electricdrivesystems/renode:local
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: renode
     tty: true
     stdin_open: true
     network_mode: host
     environment:
       - DISPLAY=${DISPLAY}
+      - XAUTHORITY=/home/developer/.Xauthority
+      - NO_AT_BRIDGE=1
     volumes:
       - ${XAUTHORITY}:/home/developer/.Xauthority
-      - ./scripts:/scripts 
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ./scripts:/scripts

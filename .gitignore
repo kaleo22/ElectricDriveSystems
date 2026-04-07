@@ -63,3 +63,5 @@ tests/**/*.dat
 *.tmp
 *.bak
 *.orig
+simulation/renode/docker-compose.yaml
+simulation/renode/docker-compose.yaml
