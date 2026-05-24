@@ -1,7 +1,7 @@
 # Design Rationale and Verification
 
-This document contains the engineering rationale and verification
-documentation for the 24 V DC Motor Driver PCB project.
+ This document contains the engineering rationale and verification
+ documentation for the 24 V DC Motor Driver PCB project.
 
 The complete report is provided in:
 
