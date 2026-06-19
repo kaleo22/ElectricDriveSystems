@@ -1,0 +1,16 @@
+services:
+  ngspice:
+    image: electricdrivesystems/ngspice:local
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: eds-simulation
+    tty: true
+    stdin_open: true
+    network_mode: host
+    volumes:
+      - ./scripts:/simulation/scripts
+      - ./kicad_circuits:/simulation/kicad_circuits
+    environment:
+      - PROJECT_NAME=MotorControl
+    working_dir: /simulation

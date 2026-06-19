@@ -22,6 +22,7 @@ Candidates:
 - PLECS
 - LTspice
 - Python (SciPy / control library)
+- Renode as Framework
 
 ## References
 

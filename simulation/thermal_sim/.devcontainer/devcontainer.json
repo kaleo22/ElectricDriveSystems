@@ -1,0 +1,20 @@
+{
+  "name": "Thermal Simulation Dev Container",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "thermal-dev",
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopCompose",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-python.vscode-pylance"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "jupyter.notebookFileRoot": "${workspaceFolder}"
+      }
+    }
+  }
+}
